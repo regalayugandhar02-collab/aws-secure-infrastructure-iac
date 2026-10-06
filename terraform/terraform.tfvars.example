@@ -1,0 +1,13 @@
+# Example variables for AWS Secure Infrastructure deployment
+aws_region          = "us-east-1"
+environment         = "prod"
+project_name        = "secure-cloud"
+vpc_cidr            = "10.0.0.0/16"
+availability_zones  = ["us-east-1a", "us-east-1b"]
+
+public_subnet_cidrs      = ["10.0.1.0/24", "10.0.2.0/24"]
+private_app_subnet_cidrs = ["10.0.10.0/24", "10.0.11.0/24"]
+private_db_subnet_cidrs  = ["10.0.20.0/24", "10.0.21.0/24"]
+
+# Change this to your public IP with /32 (e.g., "198.51.100.4/32") if you need remote admin access
+allowed_admin_ip    = "10.0.0.0/16"
